@@ -8,6 +8,9 @@ if [ $# -eq 0 ]; then
     exit 1
 fi
 
+# 設定ファイルの読み込み
+. ./config/local_install.conf
+
 # CentOSコンテナの起動
 ./src/up_container.sh
 
@@ -16,3 +19,7 @@ if [ $? -eq 1 ]; then
     echo "Running container error: failed to running centos container"
     exit 1
 fi
+
+# yumインストール（download only mode）
+./src/yum_install.sh
+

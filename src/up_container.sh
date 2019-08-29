@@ -1,9 +1,9 @@
 #!/bin/bash
 
-ContainerName="local_install"
-DockerImg="centos:latest"
-
 # CentOSコンテナを立ち上げる。
+
+# 設定ファイルの読み込み
+. ./config/local_install.conf
 
 # 起動中のコンテナをチェック
 exitRunningContainer=`docker ps | grep $ContainerName | wc -l`
