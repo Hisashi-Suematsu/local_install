@@ -23,3 +23,5 @@ fi
 # yumインストール（download only mode）
 ./src/yum_install.sh
 
+# CentOSコンテナの停止
+./src/down_container.sh
