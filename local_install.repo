@@ -1,0 +1,4 @@
+[local_install]
+gpgcheck=0
+name=local_install
+baseurl=file://Path
