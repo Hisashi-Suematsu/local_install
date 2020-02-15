@@ -9,7 +9,7 @@ if [ $# -eq 0 ]; then
 fi
 
 # 設定ファイルの読み込み
-. ./config/local_install.conf
+. ./config/standalone_install.conf
 
 # CentOSコンテナの起動
 ./src/up_container.sh

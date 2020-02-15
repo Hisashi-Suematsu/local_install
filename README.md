@@ -27,15 +27,27 @@
     ./create_repo.sh [インストールするパッケージ名(複数可)]
 ```
 
+例：
+
+> ./create_repo.sh git
+
 2. リポジトリ用ファイルをスタンドアロン環境に転送する
 
 ```
-    scp ./local_install.* [スタンドアロン環境のIP]:[送り先の絶対パス]
+    scp -i [鍵ファイルの相対パス] ./standalone_install.* [スタンドアロン環境のユーザー名]@[スタンドアロン環境のIP or DNS]:[送り先の絶対パス]
 ```
+
+例：
+
+> scp -i ~/.ssh/key/ec2.pem ./standalone_install.* centos@192.168.0.1:/home/centos/
 
 3. スタンドアロン環境にアクセスし、インストールを実行する
 
 ```
     cd [ファイルを送ったディレクトリ]
-    ./local_install.sh [インストールするパッケージ名(複数可)]
+    ./standalone_install.sh [インストールするパッケージ名(複数可)]
 ```
+
+例：
+
+> ./standalone_install.sh git

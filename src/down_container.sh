@@ -3,7 +3,7 @@
 # CentOSコンテナを停止する
 
 # 設定ファイルの読み込み
-. ./config/local_install.conf
+. ./config/standalone_install.conf
 
 # 起動中のコンテナをチェック
 exitRunningContainer=`docker ps | grep $ContainerName | wc -l`

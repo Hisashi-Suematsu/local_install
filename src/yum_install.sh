@@ -3,7 +3,7 @@
 # パッケージをyumインストールする（download only mode）
 
 # 設定ファイルの読み込み
-. ./config/local_install.conf
+. ./config/standalone_install.conf
 
 # CentOSコンテナにヒアドキュメントでアクセス
 docker exec -i $ContainerName /bin/bash <<- EOF

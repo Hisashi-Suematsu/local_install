@@ -3,7 +3,7 @@
 # CentOSコンテナを立ち上げる。
 
 # 設定ファイルの読み込み
-. ./config/local_install.conf
+. ./config/standalone_install.conf
 
 # CentOSコンテナの停止
 ./src/down_container.sh

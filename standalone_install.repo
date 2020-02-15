@@ -1,0 +1,4 @@
+[standalone_install]
+gpgcheck=0
+name=standalone_install
+baseurl=file://Path
