@@ -31,7 +31,7 @@
 
     例：
 
-    > ./create_repo.sh git
+    > `./create_repo.sh git`
 
 2. リポジトリ用ファイルをスタンドアロン環境に転送する
 
@@ -41,7 +41,7 @@
 
     例：
 
-    > scp -i ~/.ssh/key/ec2.pem ./standalone_install.* centos@192.168.0.1:/home/centos/
+    > `scp -i ~/.ssh/key/ec2.pem ./standalone_install.* centos@192.168.0.1:/home/centos/`
 
 3. スタンドアロン環境にアクセスし、インストールを実行する
 
@@ -52,4 +52,4 @@
 
     例:
 
-    > ./standalone_install.sh git
+    > `./standalone_install.sh git`
