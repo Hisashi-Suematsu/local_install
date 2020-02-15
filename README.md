@@ -23,33 +23,33 @@
 - ローカルPCがインターネットに接続されていること
 
 ## インストール手順
-### 1. ローカルPC（インターネット接続有り）でリポジトリ用ファイルを生成する
+1. ローカルPC（インターネット接続有り）でリポジトリ用ファイルを生成する
 
-```
-    ./create_repo.sh [インストールするパッケージ名(複数可)]
-```
+    ```
+        ./create_repo.sh [インストールするパッケージ名(複数可)]
+    ```
 
-例：
+    例：
 
-> ./create_repo.sh git
+    > ./create_repo.sh git
 
-### 2. リポジトリ用ファイルをスタンドアロン環境に転送する
+2. リポジトリ用ファイルをスタンドアロン環境に転送する
 
-```
-    scp -i [鍵ファイルの相対パス] ./standalone_install.* [スタンドアロン環境のユーザー名]@[スタンドアロン環境のIP or DNS]:[送り先の絶対パス]
-```
+    ```
+        scp -i [鍵ファイルの相対パス] ./standalone_install.* [ユーザー名]@[IP/DNS]:[送り先の絶対パス]
+    ```
 
-例：
+    例：
 
-> scp -i ~/.ssh/key/ec2.pem ./standalone_install.* centos@192.168.0.1:/home/centos/
+    > scp -i ~/.ssh/key/ec2.pem ./standalone_install.* centos@192.168.0.1:/home/centos/
 
-### 3. スタンドアロン環境にアクセスし、インストールを実行する
+3. スタンドアロン環境にアクセスし、インストールを実行する
 
-```
-    cd [ファイルを送ったディレクトリ]
-    ./standalone_install.sh [インストールするパッケージ名(複数可)]
-```
+    ```
+        cd [ファイルを送ったディレクトリ]
+        ./standalone_install.sh [インストールするパッケージ名(複数可)]
+    ```
 
-例：
+    例:
 
-> ./standalone_install.sh git
+    > ./standalone_install.sh git
