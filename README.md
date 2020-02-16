@@ -1,6 +1,9 @@
 # standalone_install
 スタンドアロン環境にインストールさせるためのyumリポジトリの生成スクリプト
 
+## 動作イメージ
+![demo](https://raw.githubusercontent.com/wiki/hesma2/standalone_install/images/standalone_install_demo.gif)
+
 ## ファイル構成
 ### `create_repo.sh`
 1. ローカルPC上でCentOSコンテナを立ち上げる
